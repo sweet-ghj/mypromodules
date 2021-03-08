@@ -1,0 +1,6 @@
+2020-09-05 09:38:08,456  logger_collector INFO 日志学习.py-(line68):日志收集器设置成功！！！ 
+2020-09-05 09:38:08,456  logger_collector ERROR 日志学习.py-(line71):ERROR出错啦!! 
+2020-09-05 10:32:22,783  logger_collector INFO 日志学习.py-(line68):日志收集器设置成功！！！ 
+2020-09-05 10:32:22,783  logger_collector ERROR 日志学习.py-(line71):ERROR出错啦!! 
+2020-09-05 10:49:44,632  logger_collector INFO 日志学习.py-(line70):日志收集器设置成功！！！ 
+2020-09-05 10:49:44,632  logger_collector ERROR 日志学习.py-(line73):ERROR出错啦!! 

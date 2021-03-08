@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/PycharmProjects/HTML_Practice/.idea/HTML_Practice.iml" filepath="$USER_HOME$/PycharmProjects/HTML_Practice/.idea/HTML_Practice.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/git_demo/.idea/git_demo.iml" filepath="$USER_HOME$/PycharmProjects/git_demo/.idea/git_demo.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/lemonclass_practice/.idea/lemonclass_practice.iml" filepath="$USER_HOME$/PycharmProjects/lemonclass_practice/.idea/lemonclass_practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mypro_modules.iml" filepath="$PROJECT_DIR$/.idea/mypro_modules.iml" />
+    </modules>
+  </component>
+</project>

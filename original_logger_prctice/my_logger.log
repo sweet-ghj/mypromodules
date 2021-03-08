@@ -1,0 +1,626 @@
+2020-09-05 17:29:14,871  my_py INFO my_logger.py(28 line):测试，我自己封装的日志类！ 
+2020-09-05 17:30:13,410  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:30:13,411  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python0', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 1, 'msg': '注册成功'}, 'title': '注册成功'} 
+2020-09-05 17:30:13,411  my_py INFO test_login.py(36 line):实际运行结果为{'code': 1, 'msg': '注册成功'} 
+2020-09-05 17:30:13,411  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:30:13,418  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:30:13,420  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:30:13,420  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python0', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 0, 'msg': '该账户已存在'}, 'title': '该账户已存在'} 
+2020-09-05 17:30:13,421  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '该账户已存在'} 
+2020-09-05 17:30:13,421  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:30:13,422  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:30:13,422  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:30:13,423  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python1', 'password1': 'lemonclass3', 'password2': 'lemonclass2', 'check': {'code': 0, 'msg': '两次密码不一致'}, 'title': '两次密码不一致'} 
+2020-09-05 17:30:13,423  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '该账户已存在'} 
+2020-09-05 17:30:13,423  my_py ERROR test_login.py(41 line):断言失败，用例不通过！ 
+Traceback (most recent call last):
+  File "E:\PyCharm Community Edition 2018.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'code': 0, 'msg': '两次密码不一致'} != {'code': 0, 'msg': '该账户已存在'}
+- {'code': 0, 'msg': '两次密码不一致'}
+?                     ^^^^^^^
+
++ {'code': 0, 'msg': '该账户已存在'}
+?                     ^^^^^^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ghj\Desktop\学习\mypro_modules\original_prctice\test_login.py", line 38, in test_login
+    self.assertEqual(case["check"], res)
+  File "E:\PyCharm Community Edition 2018.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: {'code': 0, 'msg': '两次密码不一致'} != {'code': 0, 'msg': '该账户已存在'}
+2020-09-05 17:30:13,430  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:30:13,430  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:30:13,430  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python3', 'password1': None, 'password2': 'lemonclass4', 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '密码1为空'} 
+2020-09-05 17:30:13,431  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 17:30:13,431  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:30:13,431  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:30:13,431  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:30:13,432  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python4', 'password1': None, 'password2': None, 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '密码2为空'} 
+2020-09-05 17:30:13,432  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 17:30:13,432  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:30:13,432  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:30:13,432  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:30:13,432  my_py INFO test_login.py(34 line):测试数据为:{'user': None, 'password1': 'lemonclass6', 'password2': 'lemonclass6', 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '账号为空'} 
+2020-09-05 17:30:13,432  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 17:30:13,433  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:30:13,433  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:30:13,433  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:30:13,433  my_py INFO test_login.py(34 line):测试数据为:{'user': 'py5', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '账号小于16位'} 
+2020-09-05 17:30:13,435  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 17:30:13,435  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:30:13,436  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:30:13,438  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:30:13,438  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python6', 'password1': 'lemonclasslemonclass', 'password2': 'lemonclasslemonclass', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '密码大于16位'} 
+2020-09-05 17:30:13,438  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 17:30:13,438  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:30:13,438  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:30:13,440  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:30:13,440  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python7', 'password1': 'lemon', 'password2': 'lemon', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '密码小于16位'} 
+2020-09-05 17:30:13,440  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 17:30:13,440  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:30:13,440  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:40:21,826  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:40:21,826  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python0', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 1, 'msg': '注册成功'}, 'title': '注册成功'} 
+2020-09-05 17:40:21,827  my_py INFO test_login.py(36 line):实际运行结果为{'code': 1, 'msg': '注册成功'} 
+2020-09-05 17:40:21,827  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:40:21,827  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:40:21,827  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:40:21,827  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python0', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 0, 'msg': '该账户已存在'}, 'title': '该账户已存在'} 
+2020-09-05 17:40:21,827  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '该账户已存在'} 
+2020-09-05 17:40:21,828  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:40:21,828  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:40:21,828  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:40:21,828  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python1', 'password1': 'lemonclass3', 'password2': 'lemonclass2', 'check': {'code': 0, 'msg': '两次密码不一致'}, 'title': '两次密码不一致'} 
+2020-09-05 17:40:21,828  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '该账户已存在'} 
+2020-09-05 17:40:21,829  my_py ERROR test_login.py(41 line):断言失败，用例不通过！ 
+Traceback (most recent call last):
+  File "E:\PyCharm Community Edition 2018.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'code': 0, 'msg': '两次密码不一致'} != {'code': 0, 'msg': '该账户已存在'}
+- {'code': 0, 'msg': '两次密码不一致'}
+?                     ^^^^^^^
+
++ {'code': 0, 'msg': '该账户已存在'}
+?                     ^^^^^^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ghj\Desktop\学习\mypro_modules\original_prctice\test_login.py", line 38, in test_login
+    self.assertEqual(case["check"], res)
+  File "E:\PyCharm Community Edition 2018.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: {'code': 0, 'msg': '两次密码不一致'} != {'code': 0, 'msg': '该账户已存在'}
+2020-09-05 17:40:21,830  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:40:21,831  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:40:21,831  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python3', 'password1': None, 'password2': 'lemonclass4', 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '密码1为空'} 
+2020-09-05 17:40:21,831  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 17:40:21,831  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:40:21,832  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:40:21,833  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:40:21,833  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python4', 'password1': None, 'password2': None, 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '密码2为空'} 
+2020-09-05 17:40:21,833  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 17:40:21,833  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:40:21,833  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:40:21,834  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:40:21,834  my_py INFO test_login.py(34 line):测试数据为:{'user': None, 'password1': 'lemonclass6', 'password2': 'lemonclass6', 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '账号为空'} 
+2020-09-05 17:40:21,834  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 17:40:21,834  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:40:21,834  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:40:21,835  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:40:21,835  my_py INFO test_login.py(34 line):测试数据为:{'user': 'py5', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '账号小于16位'} 
+2020-09-05 17:40:21,836  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 17:40:21,836  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:40:21,836  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:40:21,836  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:40:21,836  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python6', 'password1': 'lemonclasslemonclass', 'password2': 'lemonclasslemonclass', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '密码大于16位'} 
+2020-09-05 17:40:21,836  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 17:40:21,836  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:40:21,836  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:40:21,837  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:40:21,837  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python7', 'password1': 'lemon', 'password2': 'lemon', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '密码小于16位'} 
+2020-09-05 17:40:21,837  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 17:40:21,837  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:40:21,837  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:40:29,649  my_py INFO my_logger.py(28 line):测试，我自己封装的日志类！ 
+2020-09-05 17:42:09,075  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:42:09,076  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python0', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 1, 'msg': '注册成功'}, 'title': '注册成功'} 
+2020-09-05 17:42:09,076  my_py INFO test_login.py(36 line):实际运行结果为{'code': 1, 'msg': '注册成功'} 
+2020-09-05 17:42:09,076  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:42:09,076  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:42:09,077  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:42:09,077  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python0', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 0, 'msg': '该账户已存在'}, 'title': '该账户已存在'} 
+2020-09-05 17:42:09,077  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '该账户已存在'} 
+2020-09-05 17:42:09,077  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:42:09,077  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:42:09,078  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:42:09,078  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python1', 'password1': 'lemonclass3', 'password2': 'lemonclass2', 'check': {'code': 0, 'msg': '两次密码不一致'}, 'title': '两次密码不一致'} 
+2020-09-05 17:42:09,078  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '该账户已存在'} 
+2020-09-05 17:42:09,079  my_py ERROR test_login.py(41 line):断言失败，用例不通过！ 
+Traceback (most recent call last):
+  File "E:\PyCharm Community Edition 2018.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'code': 0, 'msg': '两次密码不一致'} != {'code': 0, 'msg': '该账户已存在'}
+- {'code': 0, 'msg': '两次密码不一致'}
+?                     ^^^^^^^
+
++ {'code': 0, 'msg': '该账户已存在'}
+?                     ^^^^^^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ghj\Desktop\学习\mypro_modules\original_prctice\test_login.py", line 38, in test_login
+    self.assertEqual(case["check"], res)
+  File "E:\PyCharm Community Edition 2018.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: {'code': 0, 'msg': '两次密码不一致'} != {'code': 0, 'msg': '该账户已存在'}
+2020-09-05 17:42:09,080  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:42:09,081  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:42:09,081  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python3', 'password1': None, 'password2': 'lemonclass4', 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '密码1为空'} 
+2020-09-05 17:42:09,081  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 17:42:09,081  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:42:09,081  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:42:09,082  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:42:09,082  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python4', 'password1': None, 'password2': None, 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '密码2为空'} 
+2020-09-05 17:42:09,082  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 17:42:09,082  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:42:09,082  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:42:09,083  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:42:09,083  my_py INFO test_login.py(34 line):测试数据为:{'user': None, 'password1': 'lemonclass6', 'password2': 'lemonclass6', 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '账号为空'} 
+2020-09-05 17:42:09,083  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 17:42:09,083  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:42:09,083  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:42:09,084  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:42:09,084  my_py INFO test_login.py(34 line):测试数据为:{'user': 'py5', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '账号小于16位'} 
+2020-09-05 17:42:09,084  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 17:42:09,084  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:42:09,084  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:42:09,085  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:42:09,085  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python6', 'password1': 'lemonclasslemonclass', 'password2': 'lemonclasslemonclass', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '密码大于16位'} 
+2020-09-05 17:42:09,085  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 17:42:09,085  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:42:09,085  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:42:09,085  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:42:09,085  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python7', 'password1': 'lemon', 'password2': 'lemon', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '密码小于16位'} 
+2020-09-05 17:42:09,086  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 17:42:09,086  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:42:09,086  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:42:56,220  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:42:56,220  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python0', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 1, 'msg': '注册成功'}, 'title': '注册成功'} 
+2020-09-05 17:42:56,220  my_py INFO test_login.py(36 line):实际运行结果为{'code': 1, 'msg': '注册成功'} 
+2020-09-05 17:42:56,220  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:42:56,220  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:42:56,221  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:42:56,221  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python0', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 0, 'msg': '该账户已存在'}, 'title': '该账户已存在'} 
+2020-09-05 17:42:56,221  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '该账户已存在'} 
+2020-09-05 17:42:56,221  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:42:56,221  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:42:56,222  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:42:56,222  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python1', 'password1': 'lemonclass3', 'password2': 'lemonclass2', 'check': {'code': 0, 'msg': '两次密码不一致'}, 'title': '两次密码不一致'} 
+2020-09-05 17:42:56,222  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '该账户已存在'} 
+2020-09-05 17:42:56,222  my_py ERROR test_login.py(41 line):断言失败，用例不通过！ 
+Traceback (most recent call last):
+  File "E:\PyCharm Community Edition 2018.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'code': 0, 'msg': '两次密码不一致'} != {'code': 0, 'msg': '该账户已存在'}
+- {'code': 0, 'msg': '两次密码不一致'}
+?                     ^^^^^^^
+
++ {'code': 0, 'msg': '该账户已存在'}
+?                     ^^^^^^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ghj\Desktop\学习\mypro_modules\original_prctice\test_login.py", line 38, in test_login
+    self.assertEqual(case["check"], res)
+  File "E:\PyCharm Community Edition 2018.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: {'code': 0, 'msg': '两次密码不一致'} != {'code': 0, 'msg': '该账户已存在'}
+2020-09-05 17:42:56,223  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:42:56,224  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:42:56,224  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python3', 'password1': None, 'password2': 'lemonclass4', 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '密码1为空'} 
+2020-09-05 17:42:56,224  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 17:42:56,224  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:42:56,224  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:42:56,225  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:42:56,225  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python4', 'password1': None, 'password2': None, 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '密码2为空'} 
+2020-09-05 17:42:56,225  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 17:42:56,225  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:42:56,225  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:42:56,226  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:42:56,226  my_py INFO test_login.py(34 line):测试数据为:{'user': None, 'password1': 'lemonclass6', 'password2': 'lemonclass6', 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '账号为空'} 
+2020-09-05 17:42:56,227  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 17:42:56,227  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:42:56,227  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:42:56,228  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:42:56,228  my_py INFO test_login.py(34 line):测试数据为:{'user': 'py5', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '账号小于16位'} 
+2020-09-05 17:42:56,228  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 17:42:56,228  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:42:56,228  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:42:56,229  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:42:56,229  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python6', 'password1': 'lemonclasslemonclass', 'password2': 'lemonclasslemonclass', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '密码大于16位'} 
+2020-09-05 17:42:56,230  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 17:42:56,230  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:42:56,230  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:42:56,230  my_py INFO test_login.py(33 line):——————开始执行测试用例———————— 
+2020-09-05 17:42:56,230  my_py INFO test_login.py(34 line):测试数据为:{'user': 'python7', 'password1': 'lemon', 'password2': 'lemon', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '密码小于16位'} 
+2020-09-05 17:42:56,231  my_py INFO test_login.py(36 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 17:42:56,231  my_py ERROR test_login.py(43 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:42:56,231  my_py INFO test_login.py(44 line):——————测试用例执行结束———————— 
+2020-09-05 17:43:56,183  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 17:43:56,183  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python0', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 1, 'msg': '注册成功'}, 'title': '注册成功'} 
+2020-09-05 17:43:56,184  my_py INFO test_login.py(35 line):实际运行结果为{'code': 1, 'msg': '注册成功'} 
+2020-09-05 17:43:56,184  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:43:56,184  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 17:43:56,184  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 17:43:56,184  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python0', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 0, 'msg': '该账户已存在'}, 'title': '该账户已存在'} 
+2020-09-05 17:43:56,185  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '该账户已存在'} 
+2020-09-05 17:43:56,185  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:43:56,185  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 17:43:56,185  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 17:43:56,185  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python1', 'password1': 'lemonclass3', 'password2': 'lemonclass2', 'check': {'code': 0, 'msg': '两次密码不一致'}, 'title': '两次密码不一致'} 
+2020-09-05 17:43:56,185  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '该账户已存在'} 
+2020-09-05 17:43:56,186  my_py ERROR test_login.py(40 line):断言失败，用例不通过！ 
+Traceback (most recent call last):
+  File "E:\PyCharm Community Edition 2018.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'code': 0, 'msg': '两次密码不一致'} != {'code': 0, 'msg': '该账户已存在'}
+- {'code': 0, 'msg': '两次密码不一致'}
+?                     ^^^^^^^
+
++ {'code': 0, 'msg': '该账户已存在'}
+?                     ^^^^^^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ghj\Desktop\学习\mypro_modules\original_prctice\test_login.py", line 37, in test_login
+    self.assertEqual(case["check"], res)
+  File "E:\PyCharm Community Edition 2018.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: {'code': 0, 'msg': '两次密码不一致'} != {'code': 0, 'msg': '该账户已存在'}
+2020-09-05 17:43:56,187  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 17:43:56,188  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 17:43:56,188  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python3', 'password1': None, 'password2': 'lemonclass4', 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '密码1为空'} 
+2020-09-05 17:43:56,188  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 17:43:56,188  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:43:56,188  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 17:43:56,189  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 17:43:56,189  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python4', 'password1': None, 'password2': None, 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '密码2为空'} 
+2020-09-05 17:43:56,189  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 17:43:56,189  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:43:56,189  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 17:43:56,189  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 17:43:56,190  my_py INFO test_login.py(33 line):测试数据为:{'user': None, 'password1': 'lemonclass6', 'password2': 'lemonclass6', 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '账号为空'} 
+2020-09-05 17:43:56,190  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 17:43:56,190  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:43:56,190  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 17:43:56,190  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 17:43:56,190  my_py INFO test_login.py(33 line):测试数据为:{'user': 'py5', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '账号小于16位'} 
+2020-09-05 17:43:56,191  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 17:43:56,191  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:43:56,191  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 17:43:56,191  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 17:43:56,191  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python6', 'password1': 'lemonclasslemonclass', 'password2': 'lemonclasslemonclass', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '密码大于16位'} 
+2020-09-05 17:43:56,191  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 17:43:56,191  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:43:56,192  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 17:43:56,194  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 17:43:56,195  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python7', 'password1': 'lemon', 'password2': 'lemon', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '密码小于16位'} 
+2020-09-05 17:43:56,196  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 17:43:56,196  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:43:56,196  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 17:56:30,384  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 17:56:30,385  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python0', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 1, 'msg': '注册成功'}, 'title': '注册成功'} 
+2020-09-05 17:56:30,385  my_py INFO test_login.py(35 line):实际运行结果为{'code': 1, 'msg': '注册成功'} 
+2020-09-05 17:56:30,385  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:56:30,385  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 17:56:30,386  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 17:56:30,386  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python0', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 0, 'msg': '该账户已存在'}, 'title': '该账户已存在'} 
+2020-09-05 17:56:30,386  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '该账户已存在'} 
+2020-09-05 17:56:30,386  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:56:30,387  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 17:56:30,387  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 17:56:30,387  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python1', 'password1': 'lemonclass3', 'password2': 'lemonclass2', 'check': {'code': 0, 'msg': '两次密码不一致'}, 'title': '两次密码不一致'} 
+2020-09-05 17:56:30,387  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '该账户已存在'} 
+2020-09-05 17:56:30,388  my_py ERROR test_login.py(40 line):断言失败，用例不通过！ 
+Traceback (most recent call last):
+  File "E:\PyCharm Community Edition 2018.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'code': 0, 'msg': '两次密码不一致'} != {'code': 0, 'msg': '该账户已存在'}
+- {'code': 0, 'msg': '两次密码不一致'}
+?                     ^^^^^^^
+
++ {'code': 0, 'msg': '该账户已存在'}
+?                     ^^^^^^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ghj\Desktop\学习\mypro_modules\original_prctice\test_login.py", line 37, in test_login
+    self.assertEqual(case["check"], res)
+  File "E:\PyCharm Community Edition 2018.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: {'code': 0, 'msg': '两次密码不一致'} != {'code': 0, 'msg': '该账户已存在'}
+2020-09-05 17:56:30,389  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 17:56:30,389  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 17:56:30,390  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python3', 'password1': None, 'password2': 'lemonclass4', 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '密码1为空'} 
+2020-09-05 17:56:30,390  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 17:56:30,390  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:56:30,390  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 17:56:30,391  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 17:56:30,391  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python4', 'password1': None, 'password2': None, 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '密码2为空'} 
+2020-09-05 17:56:30,391  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 17:56:30,391  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:56:30,391  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 17:56:30,392  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 17:56:30,392  my_py INFO test_login.py(33 line):测试数据为:{'user': None, 'password1': 'lemonclass6', 'password2': 'lemonclass6', 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '账号为空'} 
+2020-09-05 17:56:30,392  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 17:56:30,392  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:56:30,392  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 17:56:30,393  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 17:56:30,393  my_py INFO test_login.py(33 line):测试数据为:{'user': 'py5', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '账号小于16位'} 
+2020-09-05 17:56:30,393  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 17:56:30,393  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:56:30,393  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 17:56:30,394  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 17:56:30,394  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python6', 'password1': 'lemonclasslemonclass', 'password2': 'lemonclasslemonclass', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '密码大于16位'} 
+2020-09-05 17:56:30,394  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 17:56:30,394  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:56:30,394  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 17:56:30,394  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 17:56:30,395  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python7', 'password1': 'lemon', 'password2': 'lemon', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '密码小于16位'} 
+2020-09-05 17:56:30,395  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 17:56:30,395  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 17:56:30,395  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 18:00:48,098  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 18:00:48,099  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python0', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 1, 'msg': '注册成功'}, 'title': '注册成功'} 
+2020-09-05 18:00:48,099  my_py INFO test_login.py(35 line):实际运行结果为{'code': 1, 'msg': '注册成功'} 
+2020-09-05 18:00:48,099  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 18:00:48,099  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 18:00:48,099  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 18:00:48,099  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python0', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 0, 'msg': '该账户已存在'}, 'title': '该账户已存在'} 
+2020-09-05 18:00:48,100  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '该账户已存在'} 
+2020-09-05 18:00:48,100  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 18:00:48,100  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 18:00:48,100  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 18:00:48,100  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python1', 'password1': 'lemonclass3', 'password2': 'lemonclass2', 'check': {'code': 0, 'msg': '两次密码不一致'}, 'title': '两次密码不一致'} 
+2020-09-05 18:00:48,100  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '该账户已存在'} 
+2020-09-05 18:00:48,101  my_py ERROR test_login.py(40 line):断言失败，用例不通过！ 
+Traceback (most recent call last):
+  File "E:\PyCharm Community Edition 2018.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'code': 0, 'msg': '两次密码不一致'} != {'code': 0, 'msg': '该账户已存在'}
+- {'code': 0, 'msg': '两次密码不一致'}
+?                     ^^^^^^^
+
++ {'code': 0, 'msg': '该账户已存在'}
+?                     ^^^^^^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ghj\Desktop\学习\mypro_modules\original_prctice\test_login.py", line 37, in test_login
+    self.assertEqual(case["check"], res)
+  File "E:\PyCharm Community Edition 2018.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: {'code': 0, 'msg': '两次密码不一致'} != {'code': 0, 'msg': '该账户已存在'}
+2020-09-05 18:00:48,105  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 18:00:48,106  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 18:00:48,106  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python3', 'password1': None, 'password2': 'lemonclass4', 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '密码1为空'} 
+2020-09-05 18:00:48,106  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 18:00:48,106  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 18:00:48,106  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 18:00:48,107  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 18:00:48,107  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python4', 'password1': None, 'password2': None, 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '密码2为空'} 
+2020-09-05 18:00:48,107  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 18:00:48,107  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 18:00:48,107  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 18:00:48,108  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 18:00:48,108  my_py INFO test_login.py(33 line):测试数据为:{'user': None, 'password1': 'lemonclass6', 'password2': 'lemonclass6', 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '账号为空'} 
+2020-09-05 18:00:48,109  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-05 18:00:48,113  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 18:00:48,114  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 18:00:48,114  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 18:00:48,114  my_py INFO test_login.py(33 line):测试数据为:{'user': 'py5', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '账号小于16位'} 
+2020-09-05 18:00:48,115  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 18:00:48,115  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 18:00:48,115  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 18:00:48,116  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 18:00:48,117  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python6', 'password1': 'lemonclasslemonclass', 'password2': 'lemonclasslemonclass', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '密码大于16位'} 
+2020-09-05 18:00:48,117  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 18:00:48,117  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 18:00:48,117  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-05 18:00:48,118  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-05 18:00:48,118  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python7', 'password1': 'lemon', 'password2': 'lemon', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '密码小于16位'} 
+2020-09-05 18:00:48,119  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-05 18:00:48,119  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-05 18:00:48,119  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-06 09:57:27,232  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-06 09:57:27,232  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python0', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 1, 'msg': '注册成功'}, 'title': '注册成功'} 
+2020-09-06 09:57:27,233  my_py INFO test_login.py(35 line):实际运行结果为{'code': 1, 'msg': '注册成功'} 
+2020-09-06 09:57:27,233  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-06 09:57:27,233  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-06 09:57:27,234  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-06 09:57:27,234  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python0', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 0, 'msg': '该账户已存在'}, 'title': '该账户已存在'} 
+2020-09-06 09:57:27,234  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '该账户已存在'} 
+2020-09-06 09:57:27,234  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-06 09:57:27,234  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-06 09:57:27,235  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-06 09:57:27,235  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python1', 'password1': 'lemonclass3', 'password2': 'lemonclass2', 'check': {'code': 0, 'msg': '两次密码不一致'}, 'title': '两次密码不一致'} 
+2020-09-06 09:57:27,235  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '该账户已存在'} 
+2020-09-06 09:57:27,235  my_py ERROR test_login.py(40 line):断言失败，用例不通过！ 
+Traceback (most recent call last):
+  File "E:\PyCharm Community Edition 2018.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1138, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\ghj\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: {'code': 0, 'msg': '两次密码不一致'} != {'code': 0, 'msg': '该账户已存在'}
+- {'code': 0, 'msg': '两次密码不一致'}
+?                     ^^^^^^^
+
++ {'code': 0, 'msg': '该账户已存在'}
+?                     ^^^^^^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ghj\PycharmProjects\mypro_modules\original_logger_prctice\test_login.py", line 37, in test_login
+    self.assertEqual(case["check"], res)
+  File "E:\PyCharm Community Edition 2018.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: {'code': 0, 'msg': '两次密码不一致'} != {'code': 0, 'msg': '该账户已存在'}
+2020-09-06 09:57:27,250  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-06 09:57:27,251  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-06 09:57:27,251  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python3', 'password1': None, 'password2': 'lemonclass4', 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '密码1为空'} 
+2020-09-06 09:57:27,251  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-06 09:57:27,251  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-06 09:57:27,251  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-06 09:57:27,252  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-06 09:57:27,252  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python4', 'password1': None, 'password2': None, 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '密码2为空'} 
+2020-09-06 09:57:27,252  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-06 09:57:27,252  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-06 09:57:27,252  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-06 09:57:27,253  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-06 09:57:27,253  my_py INFO test_login.py(33 line):测试数据为:{'user': None, 'password1': 'lemonclass6', 'password2': 'lemonclass6', 'check': {'code': 0, 'msg': '所有参数不能为空'}, 'title': '账号为空'} 
+2020-09-06 09:57:27,254  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '所有参数不能为空'} 
+2020-09-06 09:57:27,254  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-06 09:57:27,254  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-06 09:57:27,255  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-06 09:57:27,255  my_py INFO test_login.py(33 line):测试数据为:{'user': 'py5', 'password1': 'lemonclass', 'password2': 'lemonclass', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '账号小于16位'} 
+2020-09-06 09:57:27,256  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-06 09:57:27,256  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-06 09:57:27,256  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-06 09:57:27,257  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-06 09:57:27,257  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python6', 'password1': 'lemonclasslemonclass', 'password2': 'lemonclasslemonclass', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '密码大于16位'} 
+2020-09-06 09:57:27,258  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-06 09:57:27,258  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-06 09:57:27,259  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
+2020-09-06 09:57:27,260  my_py INFO test_login.py(32 line):——————开始执行测试用例———————— 
+2020-09-06 09:57:27,260  my_py INFO test_login.py(33 line):测试数据为:{'user': 'python7', 'password1': 'lemon', 'password2': 'lemon', 'check': {'code': 0, 'msg': '账号和密码必须在6-18位之间'}, 'title': '密码小于16位'} 
+2020-09-06 09:57:27,260  my_py INFO test_login.py(35 line):实际运行结果为{'code': 0, 'msg': '账号和密码必须在6-18位之间'} 
+2020-09-06 09:57:27,260  my_py ERROR test_login.py(42 line):断言成功，用例通过！ 
+NoneType: None
+2020-09-06 09:57:27,261  my_py INFO test_login.py(43 line):——————测试用例执行结束———————— 
